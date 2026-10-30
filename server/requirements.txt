@@ -1,0 +1,16 @@
+# CourtIQ backend dependencies (M0 baseline).
+# Pin minor versions; bump deliberately.
+
+fastapi>=0.115,<0.116
+uvicorn[standard]>=0.32,<0.33
+pydantic>=2.9,<3
+pydantic-settings>=2.6,<3
+
+# Data / ingestion (M1). nba_api is the primary live source.
+pandas>=2.2,<3
+nba_api>=1.7,<2
+httpx>=0.27,<0.28
+tenacity>=9.0,<10
+
+# Testing
+pytest>=8.3,<9

@@ -1,0 +1,52 @@
+/* Ported from the Metaball CRA styles (index.css / App.css / BasePage.css / NavigationMenu.css). */
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background-color: #191919;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#__next {
+  height: 100%;
+}
+
+/* Full-height centered page wrapper (was .base_page) */
+.base-page {
+  min-height: 100vh;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Nav link sweep hover (was .MuiLink) */
+.nav-link {
+  text-decoration: none;
+  color: white;
+  box-shadow: inset 0 0 0 0 #ddd;
+  margin: 0 -0.5rem;
+  padding: 0 0.5rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  box-shadow: inset 100rem 0 0 0 #ddd;
+  color: #191919;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 100px;
+}
