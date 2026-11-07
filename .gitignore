@@ -178,3 +178,6 @@ bower_components
 psd
 thumb
 sketch
+
+# JetBrains IDEs
+.idea/
